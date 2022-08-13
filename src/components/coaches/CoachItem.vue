@@ -61,6 +61,10 @@ li {
 	padding: 1rem;
 }
 
+li:last-child {
+	margin-bottom: 0;
+}
+
 h3 {
 	font-size: 1.5rem;
 }
