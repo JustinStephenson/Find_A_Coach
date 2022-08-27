@@ -106,7 +106,7 @@ export default {
 					isValid: true,
 				},
 				rate: {
-					val: null,
+					val: 0,
 					type: Number,
 					isValid: true,
 				},
@@ -133,7 +133,7 @@ export default {
 						this.formIsValid = false;
 					}
 				} else if (data.type === Number) {
-					if (data.val && data.val < 0) {
+					if (data.val && data.val <= 0) {
 						data.isValid = false;
 						this.formIsValid = false;
 					}
